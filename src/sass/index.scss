@@ -1,0 +1,25 @@
+
+@import './variables.scss';
+@import './base.scss';
+@import './mixin.scss';
+
+//Component
+@import './component/Header.scss';
+@import './component/Footer.scss';
+@import './component/Home.scss';
+@import './component/SliderHome.scss';
+@import './component/SliderHomeItem.scss';
+@import './component/Policy.scss';
+@import './component/TopProducts.scss';
+@import './component/Banner.scss';
+@import './component/Catalog.scss';
+@import './component/ProductDetail.scss';
+@import './component/ProductView.scss';
+@import './component/Cart.scss';
+@import './component/Login.scss';
+@import './component/Admin.scss';
+@import './component/ManageProduct.scss';
+@import './component/ModalAddProduct.scss';
+@import './component/OrderModal.scss';
+@import './component/CartItem.scss';
+@import './component/Statistic.scss';

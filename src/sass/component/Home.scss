@@ -1,0 +1,9 @@
+.home-container {
+    width: 100%;
+    position: absolute;
+    top: 7rem;
+    .home-container-body {
+        height: 90vh;
+        // overflow: scroll;
+    }
+}

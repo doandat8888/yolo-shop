@@ -1,0 +1,128 @@
+.admin-page-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    .admin-page-container-left {
+        position: fixed;
+        width: 20%;
+        height: 100vh;
+        background-color: $main-color;
+        padding: 2rem 0;
+        .admin-page-container-left-title {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            color: $text_white;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            .admin-page-container-left-title-img {
+                width: 30%;
+            }
+        }
+        .admin-page-container-left-list {
+            .admin-page-container-left-item {
+                width: 100%;
+                cursor: pointer;
+                display: flex;
+                padding: 2rem 2rem;
+                align-items: center;
+                .admin-page-container-left-item-left {
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                    font-weight: 400;
+                    .admin-page-container-left-item-left-icon {
+                        color: $text_white;
+                    }
+                }
+                .admin-page-container-left-item-right {
+                    font-size: 1.6rem;
+                    color: $text_white;
+                    font-weight: 400;
+                    letter-spacing: 0.1rem;
+                }
+            }
+            .admin-page-container-left-item:hover{
+                background-color: $text_white;
+                .admin-page-container-left-item-left {
+                    .admin-page-container-left-item-left-icon {
+                        color: $main_color;
+                    }
+                }
+                .admin-page-container-left-item-right {
+                    color: $main_color;
+                }
+            }
+        }
+    }
+    .admin-page-container-right {
+        width: 80%;
+        padding: 1rem 2rem;
+        position: relative;
+        left: 20%;
+        .admin-page-container-right-header {
+            width: 100%;
+            display: flex;
+            .admin-page-container-right-header-left {
+                width: 30%;
+                display: flex;
+                align-items: center;
+                .admin-page-container-right-header-left-icon {
+                    font-size: 3.2rem;
+                    margin-right: 2rem;
+                }
+                .admin-page-container-right-header-left-content {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+            .admin-page-container-right-header-middle {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                margin-right: 4rem;
+                .admin-page-container-right-header-middle-input-search {
+                    padding: 1.2rem 4.2rem;
+                    border-radius: 3rem;
+                    border: 1px solid $gray;
+                    outline: none;
+                    width: 50rem;
+                }
+                .admin-page-container-right-header-middle-icon {
+                    font-size: 2rem;
+                    position: relative;
+                    left: 3.2rem;
+                }
+            }
+            .admin-page-container-right-header-right {
+                width: 30%;
+                display: flex;
+                .admin-page-container-right-header-right-left {
+                    width: 4rem;
+                    height: 4rem;
+                    border: 1px solid $gray;
+                    border-radius: 50%;
+                    margin-right: 2rem;
+                    .admin-page-container-right-header-right-left-img {
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .admin-page-container-right-header-right-right {
+                    .admin-page-container-right-header-right-right-top {
+                        font-size: 1.6rem;
+                        margin-bottom: 0.8rem;
+                        font-weight: bold;
+                    }
+                    .admin-page-container-right-header-right-right-bottom {
+                        font-size: 1.2rem;
+                        color: $gray;
+                    }
+                }
+            }
+        }
+        .admin-page-container-right-body {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,235 @@
+.product-view-container {
+    padding: 0 5rem;
+    width: 100%;
+    @include mobile {
+        padding: 0 0.4rem;
+    }
+    .product-view-container-top {
+        width: 100%;
+        display: flex;
+        @include mobile {
+            display: block;
+        }
+
+        .product-view-container-top-body {
+            display: flex;
+            width: 60%;
+            @include mobile {
+                width: 100%;
+            }
+            .product-view-container-top-left {
+                width: 20%;
+                margin-right: 5rem;
+                .product-view-container-top-left-img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+                @include mobile {
+                    width: 24%;
+                    .product-view-container-top-left-img {
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .product-view-container-top-middle {
+                width: 60%;
+                margin-right: 5rem;
+                .product-view-container-top-middle-img {
+                    width: 100%;
+                }
+                @include mobile {
+                    width: 76%;
+                    .product-view-container-top-middle-img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+        .product-view-container-top-right {
+            width: 40%;
+            margin-top: 10rem;
+            @include mobile {
+                display: block !important;
+                width: 100% !important;
+            }
+            .product-view-container-top-right-title {
+                margin-bottom: 1.8rem;
+                .product-view-container-top-right-title-content {
+                    font-size: 3.2rem;
+                    font-weight: 400;
+                }
+            }
+            .product-view-container-top-right-price {
+                margin-bottom: 2rem;
+                .product-view-container-top-right-price-content {
+                    font-size: 2.8rem;
+                    font-weight: 500;
+                    color: $main_color;
+                }
+            }
+            .product-view-container-top-right-color {
+                .product-view-container-top-right-color-title {
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
+                .product-view-container-top-right-color-body {
+                    display: flex;
+                    margin-bottom: 2rem;
+                    .product-view-container-top-right-color-body-item {
+                        margin-right: 1.2rem;
+                        padding: 0.4rem;
+                        border: 0.2rem solid $gray;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        .product-view-container-top-right-color-body-item-content {
+                            width: 3.6rem;
+                            height: 3.6rem;
+                            border-radius: 50%;
+                        }
+                        &.main{
+                            border-color: $main-color;
+                        }
+                    }
+                    .product-view-container-top-right-color-body-item:hover {
+                        border-color: $main_color;
+                    }
+                }
+            }
+    
+            .product-view-container-top-right-size {
+                .product-view-container-top-right-size-title {
+                    font-size: 1.8rem;
+                    margin-bottom: 2rem;
+                }
+                .product-view-container-top-right-size-body {
+                    display: flex;
+                    margin-bottom: 2rem;
+                    .product-view-container-top-right-size-body-item {
+                        margin-right: 1.2rem;
+                        padding: 0.4rem;
+                        border: 0.2rem solid $gray;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        .product-view-container-top-right-size-body-item-content {
+                            width: 3.6rem;
+                            height: 3.6rem;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1.8rem;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                        }
+                        &.main{
+                            border-color: $main_color;
+                        }
+                    }
+                    .product-view-container-top-right-size-body-item:hover {
+                        border-color: $main_color;
+                    }
+                }
+            }
+            .product-view-container-top-right-quantity-title {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+            .product-view-container-top-right-quantity-body {
+                display: flex;
+                margin-bottom: 2rem;
+                .product-view-container-top-right-quantity-body-item-left {
+                    font-size: 1.5rem;
+                    padding: 0.4rem;
+                    border-top: 2px solid $gray;
+                    border-bottom: 2px solid $gray;
+                    border-left: 2px solid $gray;
+                    cursor: pointer;
+                }
+                .product-view-container-top-right-quantity-body-item-right {
+                    font-size: 1.5rem;
+                    padding: 0.4rem;
+                    border-top: 2px solid $gray;
+                    border-bottom: 2px solid $gray;
+                    border-right: 2px solid $gray;
+                    cursor: pointer;
+                }
+                .product-view-container-top-right-quantity-body-item-middle {
+                    padding: 0.4rem 5.4rem;
+                    border: 2px solid $gray;
+                    font-size: 1.5rem
+                }
+            }
+            .product-view-container-top-right-button {
+                .product-view-container-top-right-button-item {
+                    border: none;
+                    outline: none;
+                    padding: 8px 32px;
+                    border-radius: 32px;
+                    height: 4rem;
+                    color: weight;
+                    text-transform: uppercase;
+                    color: $text_white;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-right: 2rem;
+                    @include tablet {
+                        padding: 0.8rem 3.2rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-view-container-bottom {
+        .product-view-container-bottom-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 4rem;
+            @include mobile {
+                padding: 0 1.2rem;
+            }
+        }
+
+        .product-view-container-bottom-body {
+            width: 60%;
+            @include mobile {
+                width: 100%;
+                padding: 0 1.2rem;
+            }
+            .product-view-container-bottom-content {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 3.2rem;
+                margin-top: 3.2rem;
+                &.half{
+                    height: 42rem;
+                    overflow: hidden;
+                }
+            }
+            .product-view-container-bottom-button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .product-view-container-bottom-button-content {
+                    border: none;
+                    outline: none;
+                    padding: 1rem 3.2rem;
+                    border-radius: 32px;
+                    color: weight;
+                    text-transform: uppercase;
+                    color: $text_white;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-right: 2rem;
+                }
+            }
+        }
+        
+    }
+    
+}

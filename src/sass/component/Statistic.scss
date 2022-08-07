@@ -1,0 +1,14 @@
+.statistic-container {
+    width: 100%;
+    .statistic-container-product {
+        width: 100%;
+        .statistic-container-product-title {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: $main_color;
+            font-weight: bold;
+        }
+    }
+}

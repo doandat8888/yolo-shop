@@ -1,0 +1,85 @@
+.cart-container {
+    width: 100%;
+    position: absolute;
+    top: 7rem;
+    margin-top: 6rem;
+    .cart-container-body {
+        width: 100%;
+        padding: 0 5rem;
+        display: flex;
+        @include mobile {
+            display: block !important;
+            padding: 0 2rem;
+        }
+        .cart-container-body-left {
+            width: 28%;
+            @include tablet {
+                width: 28%;
+                @include mobile {
+                    width: 100%;
+                    margin-bottom: 3.2rem;
+                }
+            }
+            padding: 0 2.6rem;
+            .cart-container-body-left-title {
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+                @include tablet {
+                    font-size: 1.2rem;
+                }
+            }
+            .cart-container-body-left-total {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+                .cart-container-body-left-total-title {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    @include tablet {
+                        font-size: 1.2rem;
+                    }
+                }
+                .cart-container-body-left-total-money {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: $main_color;
+                    @include tablet {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .cart-container-body-left-button {
+                border: none;
+                outline: none;
+                padding: 2.4rem 3.2rem;
+                border-radius: 3.2rem;
+                height: 4rem;
+                color: weight;
+                text-transform: uppercase;
+                color: $text_white;
+                font-size: 1.6rem;
+                font-weight: bold;
+                cursor: pointer;
+                margin-right: 2rem;
+                width: 100%;
+                margin-bottom: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include tablet {
+                    font-size: 1.1rem;
+                    padding: 2rem 2.4rem;
+                }
+            }
+        }
+        .cart-container-body-right {
+            width: 72%;
+            padding: 0 2.6rem;
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.slider-home-item-container {
+    padding: 0 4rem;
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    @include mobile {
+        display: block;
+        padding: 0 1rem;
+    }
+    .slider-home-item-container-left {
+        width: 65%;
+        position: relative;
+        top: 4rem;
+        @include mobile {
+            position: relative;
+            width: 100%;
+            top: 30rem;
+        }
+        .slider-home-item-container-left-title {
+            font-family: "M PLUS Rounded 1c", sans-serif;
+            font-size: 5.8rem;
+            font-weight: bold;
+            color: $main_color;
+            letter-spacing: 0.1rem;
+            &.main{
+                color: $main_color;
+            }
+            &.pink{
+                color: $pink;
+            }
+            &.orange {
+                color: $orange;
+            }
+
+            @include tablet {
+                font-size: 3rem;
+            }
+
+            @include mobile {
+                font-size: 3.2rem;
+            }
+        }
+        .slider-home-item-container-left-content {
+            margin: 48px 0 64px 0;
+            width: 90%;
+            font-size: 2rem;
+            color: #8d8d8d;
+            font-weight: 400;
+            line-height: 32px;
+
+            @include tablet {
+                font-size: 1.6rem;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+        }   
+        .slider-home-item-container-left-button {
+            border: none;
+            outline: none;
+            padding: 8px 32px;
+            border-radius: 32px;
+            height: 4rem;
+            color: weight;
+            text-transform: uppercase;
+            color: $text_white;
+            font-size: 1.6rem;
+            font-weight: bold;
+            cursor: pointer;
+            &.main{
+                background-color: $main_color;
+            }
+            &.pink{
+                background-color: $pink;
+            }
+            &.orange {
+                background-color: $orange;
+            }
+        }
+
+    }
+
+    .slider-home-item-container-right {
+        width: 40%;
+        @include mobile {
+            width: 90%;
+        }
+        .slider-home-item-container-rigth-img {
+            position: relative;
+            top: -1rem;
+            width: 80%;
+            z-index: 3;
+            @include tablet {
+                width: 50%;
+                top: 5.4rem;
+                right: -10rem;
+            }
+
+            @include mobile {
+                top: -42rem;
+                left: 10rem;
+                width: 50%;
+            }
+        }
+        .slider-home-item-container-right-shape {
+            $size: 472px;
+            width: $size;
+            height: $size;
+            pointer-events: none;
+
+            border-radius: 58% 42% 38% 62% / 42% 55% 45% 58% ;
+            
+            position: absolute;
+            right: 80px;
+            top: 50%;
+            z-index: 2;
+            transform: translateY(-50%);
+
+            transition: border-radius 12s ease;
+            animation: border 10s infinite;
+
+            &.main{
+                background-color: $main_color;
+            }
+            &.pink{
+                background-color: $pink;
+            }
+            &.orange {
+                background-color: $orange;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 20rem;
+            }
+
+            @include mobile() {
+                position: absolute;
+                $size: 200px;
+                width: $size;
+                height: $size;
+                top: 15rem;
+                margin-right: 4rem;
+            }
+
+        }
+    }
+    &.active {
+        visibility: visible;
+        @include mobile {
+            
+        }
+    }
+}

@@ -1,0 +1,22 @@
+$text_black: #000;
+$text_white: #fff;
+$main_color: #4267b2;
+$blue: $main_color;
+$pink: #ffa5ab;
+$orange: #ff6b35;
+$gray: #8d8d8d;
+$red: #f94144;
+$yellow: #ffd449;
+$blue: #73d2de;
+$white: $text_white;
+
+$colors: (
+    'white': #fff,
+    'pink': #ffa5ab,
+    'black': #000,
+    'yellow': #ffd449,
+    'orange': #ff6b35,
+    'blue': #73d2de,
+    'main': $main_color,
+    'red' : #f94144,
+);

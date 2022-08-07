@@ -1,0 +1,79 @@
+.policy-container {
+    margin-bottom: 4rem;
+    padding: 0 50px;
+    width: 100%;
+    .policy-container-list {
+        display: flex;
+        width: 100%;
+
+        @include tablet {
+            display: flex;
+        }
+
+        @include mobile {
+            display: block !important;
+            width: 100% !important;
+        }
+        .policy-container-item {
+            cursor: pointer;
+            width: 25%;
+            display: flex;
+            padding: 2rem 3.2rem;
+            transition: transform 0.5s ease;
+
+            @include tablet {
+                width: 50%;
+                padding: 2rem 0;
+            }
+
+            @include mobile {
+                width: 100% !important;
+                top: 20rem;
+            }
+            .policy-container-item-left {
+                .policy-container-item-left-icon {
+                    font-size: 4.6rem;
+                    color: $main_color;
+                    font-weight: 400;
+                    margin-right: 2.4rem;
+                    @include tablet {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            .policy-container-item-right {
+                @include tablet {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .policy-container-item-right-title {
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    margin-bottom: 0.8rem;
+                }
+                .policy-container-item-right-description {
+                    color: $gray;
+                    font-size: 1.2rem;
+                    @include mobile {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .policy-container-item:hover {
+            transform: translateY(-2rem);
+        }
+        .policy-container-item:hover .policy-container-item-right-title {
+            color: $main_color;
+        }
+    }
+    @include mobile {
+        padding: 0;
+        margin-top: 40rem;
+    }
+}
+

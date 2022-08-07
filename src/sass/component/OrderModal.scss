@@ -1,0 +1,122 @@
+.order-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    
+
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        .order-modal-container-content {
+            transition: transform 0.5s ease;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            @include mobile {
+                height: 100vh;
+                overflow: scroll;
+            }
+        }
+    }
+    .order-modal-container-content {
+        border-radius: 1rem;
+        @include mobile {
+            width: 98%;
+        }
+        width: 50%;
+        margin: 5rem auto;
+        background-color: $text_white;
+        transform: translateY(-25rem);
+        //height: 10rem;
+        .order-modal-container-content-header {
+            padding: 0.4rem 0;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            width: 100%;
+            display: flex;
+            background-color: $main_color;
+            justify-content: center;
+            .order-modal-container-content-header-img {
+                width: 10%;
+            }
+            .order-modal-container-content-header-icon {
+                position: relative;
+                left: 28rem;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+        }
+        .order-modal-container-content-body {
+            padding: 2rem 2rem;
+            .order-modal-container-content-body-list {
+                display: flex;
+                flex-wrap: wrap;
+                .order-modal-container-content-body-item {
+                    width: 50%;
+                    padding-right: 2rem;
+                    margin-bottom: 1rem;
+                    .order-modal-container-content-body-item-title {
+                        margin-bottom: 1rem;
+                        font-size: 1.2rem;
+                    }
+                    .order-modal-container-content-body-item-input {
+                        padding: 0.8rem 1.2rem;
+                        border: 1px solid $gray;
+                        border-radius: 0.5rem;
+                        width: 100%;
+                        outline: none;
+                    }
+                }
+            }
+            .order-modal-container-content-body-cart {
+                margin-top: 2rem;
+                width: 100%;
+                .order-modal-container-content-body-cart-title {
+                    font-size: 1.6rem;
+                    margin-bottom: 1rem;
+                }
+                .order-modal-container-content-body-cart-list {
+                    width: 100%;
+                    @include mobile {
+                        width: 80%;
+                        height: 20rem;
+                        overflow: scroll;
+                    }
+                }
+                .order-modal-container-content-body-cart-total {
+                    font-size: 1.6rem;
+                    margin-bottom: 1.8rem;
+                }
+            }
+            .order-modal-container-content-body-btn {
+                display: flex;
+                justify-content: flex-start;
+                .order-modal-container-content-body-btn-content {
+                    margin-right: 1.4rem;
+                    border: none;
+                    outline: none;
+                    padding: 0.8rem 1.2rem;
+                    border-radius: 0.3rem;
+                    color: $text_white;
+                    cursor: pointer;
+                    &.confirm {
+                        background-color: $main_color;
+                    }
+                    &.cancel {
+                        background-color: $gray;
+                    }
+                }
+            }
+            
+        }
+    }
+}

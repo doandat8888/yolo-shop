@@ -1,0 +1,142 @@
+.catalog-container {
+    position: absolute;
+    top: 7rem !important;
+    width: 100%;
+    //display: flex;
+    margin-top: 5rem;
+
+    .catalog-container-left-show-hide-filter {
+        border: none;
+        outline: none;
+        background-color: $main_color;
+        text-transform: uppercase;
+        border-radius: 30px;
+        width: 16rem;
+        color: $text_white;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        height: 3.2rem;
+        cursor: pointer;
+        margin-left: 5rem;
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    .catalog-container-filter {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 45%;
+        background-color: white;
+        z-index: 99;
+        margin-left: 2rem;
+        height: 70vh;
+        display: none;
+        @include mobile {
+            transform: translateX(calc(-100% - 1rem));
+        }
+        &.active {
+            display: block;
+        }
+
+        &.translate {
+            transition: transform 0.4s ease;
+            transform: translateX(0);
+        }
+
+        .catalog-container-filter-icon-hide-filter {
+            font-size: 3.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .catalog-container-left-first {
+            margin-bottom: 2rem;
+            .catalog-container-left-first-title {
+                font-size: 1.6rem;
+                font-weight: bold;
+                margin-bottom: 1.2rem;
+            }
+            .catalog-container-left-first-select {
+                display: flex;
+                margin: 1.2rem 0;
+                .catalog-container-left-first-select-checkbox {
+                    margin-right: 1rem;
+                }
+                .catalog-container-left-first-select-content {
+                    font-size: 1.3rem;
+                    color: $gray;
+                }
+            }
+        }
+        .catalog-container-left-button {
+            border: none;
+            outline: none;
+            background-color: $main_color;
+            text-transform: uppercase;
+            border-radius: 30px;
+            width: 16rem;
+            color: $text_white;
+            padding: 1rem 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            cursor: pointer;
+        }
+    }
+    .catalog-container-body {
+        display: flex;
+        padding: 0 5rem;
+
+        .catalog-container-left {
+            width: 20%;
+            @include mobile {
+                display: none;
+            }
+            .catalog-container-left-first {
+                margin-bottom: 2rem;
+                .catalog-container-left-first-title {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    margin-bottom: 1.2rem;
+                }
+                .catalog-container-left-first-select {
+                    display: flex;
+                    margin: 1.2rem 0;
+                    .catalog-container-left-first-select-checkbox {
+                        margin-right: 1rem;
+                    }
+                    .catalog-container-left-first-select-content {
+                        font-size: 1.3rem;
+                        color: $gray;
+                    }
+                }
+            }
+            .catalog-container-left-button {
+                border: none;
+                outline: none;
+                background-color: $main_color;
+                text-transform: uppercase;
+                border-radius: 30px;
+                width: 16rem;
+                color: $text_white;
+                padding: 1rem 0;
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-bottom: 2rem;
+                cursor: pointer;
+            }
+
+            
+        }
+        .catalog-container-right {
+            width: 80%;
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+}

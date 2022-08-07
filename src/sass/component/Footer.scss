@@ -1,0 +1,43 @@
+.footer-container {
+    width: 100%;
+    margin-top: 8rem;
+    padding: 0 5rem 2rem 5rem;
+    .footer-container-list {
+        width: 100%;
+        display: flex;
+        @include mobile {
+            display: block !important;
+        }
+        .footer-container-item {
+            width: 25%;
+            @include mobile {
+                width: 100%;
+            }
+            .footer-container-title {
+                font-size: 1.4rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 2.4rem;
+                width: 100%;
+                .footer-container-title-img {
+                    width: 40%;
+                }
+            }
+            .footer-container-body {
+                font-size: 1.4rem;
+                font-weight: 400;
+                .footer-container-body-content {
+                    margin-bottom: 1.6rem;
+                    padding-right: 2rem;
+                    &.active{
+                        cursor: pointer;
+                    }
+                    &.active:hover {
+                        color: $main_color;
+                    }
+                }
+            }
+            
+        }
+    }
+}
