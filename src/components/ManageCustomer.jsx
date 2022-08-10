@@ -13,13 +13,14 @@ const ManageCustomer = () => {
             setBills(response.data)
         }
         setKeywords(keywords)
-    }, [bills], [keywords])
+    }, [bills])
 
-    if(keywords) {
-        bills = bills.filter((bill) => {
-            let fullName = bill.firstName + ' ' + bill.lastName;
-            return fullName.includes(keywords)
-        })
+    if(keywords !== '') {
+        // bills = bills.filter((bill) => {
+        //     let fullName = bill.firstname + ' ' + bill.lastname;
+        //     return fullName.includes(keywords)
+        // })
+        bills = bills.filter((bill) => (bill.firstname + ' ' + bill.lastname).includes(keywords))
     }
 
     

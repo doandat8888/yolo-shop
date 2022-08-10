@@ -128,9 +128,9 @@ const ModalAddProduct = (props) => {
             setProductImg2('NO UPDATE');
             setProductColors(oldData.colors);
             setProductSizes(oldData.sizes);
-            setCategorySlug(oldData.categorySlug);
-            setContentHTML(oldData.contentHTML);
-            setContentMarkdown(oldData.contentMarkdown);
+            setCategorySlug(oldData.categoryslug);
+            setContentHTML(oldData.contenthtml);
+            setContentMarkdown(oldData.contentmarkdown);
             setProductQuantity(oldData.quantity);
         }
         if(isResetData === true) {

@@ -8,6 +8,7 @@ import ProductDetail from '../components/ProductDetail';
 import Cart from '../pages/Cart';
 import LoginPage from '../pages/Login';
 import AdminPage from '../pages/Admin';
+import DeliveryInfo from '../pages/DeliveryInfo';
 
 const Routes = () => {
     return (
@@ -17,6 +18,7 @@ const Routes = () => {
             <Route path="/admin" exact component={LoginPage}/>
             <Route path="/admin-login-success" exact component={AdminPage} />
             <Route path="/cart" exact component={Cart} />
+            <Route path="/delivery" exact component={DeliveryInfo} />
             <Route path="/:slug" component={ProductDetail} />
         </Switch>
     )

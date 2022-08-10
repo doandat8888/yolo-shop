@@ -31,7 +31,8 @@ const Cart = () => {
         if(cartItems.length <= 0) {
             alert('Bạn chưa có sản phẩm nào trong giỏ hàng. Vui lòng chọn sản phẩm')
         }else {
-            setIsOpenModal(true);
+            //setIsOpenModal(true);
+            history.push('/delivery');
         }
     }
 

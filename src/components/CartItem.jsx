@@ -5,6 +5,7 @@ import { updateItems, removeItem } from '../redux/cart-item/cartItemSlice';
 
 const CartItem = (props) => {
     const {item} = props;
+    const {isDelivery} = props;
     const {isOrdering} = props;
     const [quantity, setQuantity] = useState(item.quantity);
     const dispatch = useDispatch();
@@ -56,7 +57,7 @@ const CartItem = (props) => {
                     <div className="cart-container-body-right-item-quantity-item-middle">{quantity}</div>
                     <div className="cart-container-body-right-item-quantity-item-right"><i className = 'bx bx-plus' onClick={() => updateQuantity("UP")}></i></div>
                 </div>
-                <div className="cart-container-body-right-item-icon">
+                <div className={`cart-container-body-right-item-icon ${isDelivery === true ? 'delivery' : ''}`}>
                     <i className = 'bx bx-trash cart-container-body-right-item-icon-content' onClick={removeCartItem}></i>
                 </div>
             </div>
